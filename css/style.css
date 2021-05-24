@@ -4,3 +4,66 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-color: #eee;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  text-transform: uppercase;
+  margin: 0 20.5px;
+}
+.nav__link {
+  padding: 1px 2px;
+  color: black;
+  font-weight: 500;
+}
+.basket__link {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  background-image: url(../images/home/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-size:15px;
+  background-position: left;
+  padding-left: 40px;
+}
+.title__wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../images/home/illustration_2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.header__title {
+  max-width: 500px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.header__subtitle {
+  max-width: 350px;
+  margin-bottom: 40px;
+}
+.header__btn {
+  background-color: #fb565a;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+  padding: 15px 54px;
+  border-radius: 3px;
+}
