@@ -22,7 +22,7 @@
           <a class="logo" href="#"><img src="images/home/logo.svg" alt="logo"></a>
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">студия</a></li>
+              <li class="nav__item"><a class="nav__link active" href="#">студия</a></li>
               <li class="nav__item"><a class="nav__link" href="#">клиенты</a></li>
               <li class="nav__item"><a class="nav__link" href="#">магазин</a></li>
               <li class="nav__item"><a class="nav__link" href="#">контакты</a></li>
@@ -32,7 +32,8 @@
         </div>
         <div class="title__wrapper">
           <h2 class="header__title">Долго, дорого, скурпулезно.</h2>
-          <p class="header__subtitle subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <p class="header__subtitle subtitle">Математически выверенный дизайн для вашего сайта или мобильного
+            приложения.</p>
           <a href="#" class="header__btn">узнать больше</a>
         </div>
       </div>
@@ -69,7 +70,8 @@
     <section class="about">
       <div class="about__wrapper">
         <h1 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
-        <p class="about__subtitle subtitle">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+        <p class="about__subtitle subtitle">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше
           креатива. Работаем не покладая рук, как роботы.</p>
         <h4 class="about__caption">Выполняем заказы на разработку:</h4>
         <ul class="about__list">
@@ -80,7 +82,7 @@
       </div>
       <div class="about__wrapper">
         <img class="about__image" src="images/home/illustration_1.png" alt="">
-        <h4 class="about__caption"></h4>
+        <h4 class="about__caption">с 2004 года Любим точность во всем:</h4>
         <table class="about__table">
           <tr class="table__parameter">
             <td>146 <span>%</span> </td>
@@ -100,10 +102,10 @@
   <div class="container">
     <section class="partners">
       <ul class="partners__list">
-        <li class="partners__item"><a href="#" class="partners__link">1</a></li>
-        <li class="partners__item"><a href="#" class="partners__link">2</a></li>
-        <li class="partners__item"><a href="#" class="partners__link">3</a></li>
-        <li class="partners__item"><a href="#" class="partners__link">4</a></li>
+        <li class="partners__item"><a href="#" class="partners__link htmlAcademy"></a></li>
+        <li class="partners__item"><a href="#" class="partners__link boroda"></a></li>
+        <li class="partners__item"><a href="#" class="partners__link pink"></a></li>
+        <li class="partners__item"><a href="#" class="partners__link mishka"></a></li>
       </ul>
 
 
@@ -111,35 +113,37 @@
   </div>
 
   <section class="map">
-    <div class="map__contacts contacts">
-      <h3 class="contacts__title">nёrds design studio</h3>
-      <p class="contacts__address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <a href="tel:+78005558628" class="contacts__phone">+7 800 555-86-28</a>
-      <button class="contacts__button">напишите нам</button>
-    </div>
+    <div class="container">
+      <div class="map__contacts contacts">
+        <h3 class="contacts__title">nёrds design studio</h3>
+        <p class="contacts__address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <a href="tel:+78005558628" class="contacts__phone">+7 800 555-86-28</a>
+        <button class="contacts__button">напишите нам</button>
+      </div>
 
-    <div class="write hidden">
-      <button class="write__close" type="button">Закрыть</button>
+      <div class="write popup ">
+        <button class="write__close" type="button">Закрыть</button>
 
-      <form class="write__form form">
-        <h2 class="form__title">Напишите нам</h2>
-        <div class="input__wrapper">
+        <form class="write__form form">
+          <h2 class="form__title">Напишите нам</h2>
+          <div class="input__wrapper">
+            <p class="form__text">
+              <label for="name">Ваше имя:</label>
+              <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="form__text">
+              <label for="login">Ваш email:</label>
+              <input id="login" type="email" name="login" placeholder="email@example.com">
+            </p>
+          </div>
           <p class="form__text">
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="text">Текс письма:</label>
+            <textarea id="text" type="text" name="text" placeholder="В свободной форме"></textarea>
           </p>
-          <p class="form__text">
-            <label for="login">Ваш email:</label>
-            <input id="login" type="email" name="login" placeholder="email@example.com">
-          </p>
-        </div>
-        <p class="form__text">
-          <label for="text">Текс письма:</label>
-          <textarea id="text" type="text" name="text" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="form__send" type="submit">отправить</button>
+          <button class="form__send" type="submit">отправить</button>
 
-      </form>
+        </form>
+      </div>
     </div>
   </section>
 
