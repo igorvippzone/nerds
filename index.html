@@ -44,7 +44,7 @@
     <section class="services">
 
       <div class="services__item">
-        <img class="services__img" src="images/home/services_1.jpg" alt="">
+        <img class="services__img" src="./images/home/services_1.jpg" alt="">
         <h3 class="services__title">веб-сайты</h3>
         <p class="services__subtitle subtitle">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
         <button class="services__button web">заказать</button>
@@ -80,21 +80,17 @@
           <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div class="about__wrapper">
+      <div class="about-image__wrapper">
         <img class="about__image" src="images/home/illustration_1.png" alt="">
         <h4 class="about__caption">с 2004 года Любим точность во всем:</h4>
-        <table class="about__table">
-          <tr class="table__parameter">
-            <td>146 <span>%</span> </td>
-            <td>100 <span>%</span></td>
-            <td>50 <span>%</span></td>
-          </tr>
-          <tr class="table__title">
-            <th>Уровень самоотдачи</th>
-            <th>Соблюдение сроков</th>
-            <th>Минимальная предоплата</th>
-          </tr>
-        </table>
+        <ul class="standart__list">
+          <li class="standart__item">146 <span>%</span> Уровень самоотдачи</li>
+          <li class="standart__item">100 <span>%</span> Соблюдение сроков</li>
+          <li class="standart__item">50 <span>%</span> Минимальная предоплата</li>
+
+
+
+        </ul>
       </div>
     </section>
   </div>
@@ -165,6 +161,36 @@
       </div>
     </div>
   </footer>
+
+
+  <style>
+    dot{
+      position: absolute;
+      display: block;
+      border: 2px solid red;
+      border-radius: 50px;
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+
+<script>
+  function update(event){
+    for(let dot;dot=document.querySelector('dot');){
+      dot.remove();
+    }
+    for(let i=0; i<event.touches.length; i++){
+      let{pageX,pageY} = event.touches[i];
+      let dot = document.createElement('dot');
+      dot.style.left=(pageX-50)+'px';
+      dot.style.top=(pageY-50)+'px';
+      document.body.appendChild(dot);
+    }
+  }
+  window.addEventListener('touchstart',update)
+  window.addEventListener('touchmove',update)
+  window.addEventListener('touchend',update)
+</script>
 
   <script src="js/main.js"></script>
 </body>

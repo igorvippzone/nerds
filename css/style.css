@@ -139,6 +139,9 @@ header {
   color: #fff;
   padding: 16px 40px;
   margin-top: 50px;
+  
+  transition: all;
+  transition-duration: 0.2s;
 }
 .web {
   background-color: var(--red);
@@ -173,11 +176,18 @@ header {
 }
 .about {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 80px 0;
   border-bottom: 1px solid #eee;
 }
 .about__wrapper {
+  max-width: 650px;
+  width: 100%;
+}
+.about-image__wrapper {
+  max-width: 360px;
+  width: 100%;
 }
 .about__title {
   font-weight: 500;
