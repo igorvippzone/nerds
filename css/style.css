@@ -22,19 +22,30 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+/* .logo{
+  width: 1600px;
+}
+.logo img {
+  max-width: 160px;
+  width: 100%;
+} */
 .logo:hover {
   opacity: 0.7;
 }
 .logo:active {
   opacity: 0.3;
 }
+.nav{
+  flex-basis: 50%;
+}
 .nav__list {
   display: flex;
   flex-wrap: wrap;
+justify-content: space-between;
 }
 .nav__item {
   text-transform: uppercase;
-  margin: 0 20.5px;
+  /* margin: 0 20.5px; */
 }
 .nav__link {
   padding: 1px 2px;
@@ -87,7 +98,7 @@ header {
 
   color: #283136;
 }
-.header__btn {
+.button {
   background-color: var(--red);
   text-transform: uppercase;
   font-weight: 500;
@@ -99,10 +110,10 @@ header {
   transition: all;
   transition-duration: 0.2s;
 }
-.header__btn:hover {
+.button:hover {
   background-color: #e74246;
 }
-.header__btn:active {
+.button:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -139,7 +150,7 @@ header {
   color: #fff;
   padding: 16px 40px;
   margin-top: 50px;
-  
+
   transition: all;
   transition-duration: 0.2s;
 }
@@ -211,7 +222,7 @@ header {
 }
 .partners__list {
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .partners__item {
@@ -259,21 +270,43 @@ header {
 .mishka {
   background-image: url(../images/home/partners_4.png);
 }
-.map{
+.map {
   background-image: url(../images/home/map.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   /* min-height: 416px; */
   margin-top: 80px;
-padding: 55px 0;
+  padding: 55px 0;
 }
-.contacts{
+.contacts {
   background-color: #fff;
   max-width: 320px;
   height: 310px;
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.contacts__title{
+  text-transform: uppercase;
+  font-weight: 700;
+font-size: 18px;
+line-height: 30px;
+}
+.contacts__adress{
+  max-width: ;
+}
+.contacts__adress,.contacts__phone{
+  color: #666666;
+}
+.contacts__button{
+
 }
 
 .popup {
