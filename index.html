@@ -22,7 +22,7 @@
           <a class="logo" href="#"><img src="images/home/logo.svg" alt="logo"></a>
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link active" href="js-click.html">js шарик</a></li>
+              <li class="nav__item"><a class="nav__link active" href="#">js шарик</a></li>
               <li class="nav__item"><a class="nav__link" href="#">клиенты</a></li>
               <li class="nav__item"><a class="nav__link" href="#">магазин</a></li>
               <li class="nav__item"><a class="nav__link" href="#">контакты</a></li>
@@ -164,7 +164,7 @@
 
 
   <style>
-    dot{
+    dot {
       position: absolute;
       display: block;
       border: 2px solid red;
@@ -174,23 +174,23 @@
     }
   </style>
 
-<script>
-  function update(event){
-    for(let dot;dot=document.querySelector('dot');){
-      dot.remove();
+  <script>
+    function update(event) {
+      for (let dot; dot = document.querySelector('dot');) {
+        dot.remove();
+      }
+      for (let i = 0; i < event.touches.length; i++) {
+        let { pageX, pageY } = event.touches[i];
+        let dot = document.createElement('dot');
+        dot.style.left = (pageX - 50) + 'px';
+        dot.style.top = (pageY - 50) + 'px';
+        document.body.appendChild(dot);
+      }
     }
-    for(let i=0; i<event.touches.length; i++){
-      let{pageX,pageY} = event.touches[i];
-      let dot = document.createElement('dot');
-      dot.style.left=(pageX-50)+'px';
-      dot.style.top=(pageY-50)+'px';
-      document.body.appendChild(dot);
-    }
-  }
-  window.addEventListener('touchstart',update)
-  window.addEventListener('touchmove',update)
-  window.addEventListener('touchend',update)
-</script>
+    window.addEventListener('touchstart', update)
+    window.addEventListener('touchmove', update)
+    window.addEventListener('touchend', update)
+  </script>
 
   <script src="js/main.js"></script>
 </body>
