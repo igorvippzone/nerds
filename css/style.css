@@ -394,9 +394,19 @@ header {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   padding: 70px 100px;
   z-index: 1000;
+  display: block;
   /* opacity: 0; */
   /* visibility: hidden; */
   /* display: none; */
+}
+.hidden {
+  position: absolute;
+  /* opacity: 0; */
+  top: -100%;
+  display: none;
+
+  transition: all;
+  transition-duration: 0.2s;
 }
 
 .form__title {
@@ -513,16 +523,5 @@ header {
   line-height: 22px;
   color: #444444;
 }
-.hidden {
-  position: absolute;
-  opacity: 0;
-}
 
-dot {
-  position: absolute;
-  display: block;
-  border: 2px solid red;
-  border-radius: 50px;
-  height: 100px;
-  width: 100px;
-}
+
