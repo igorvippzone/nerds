@@ -22,7 +22,7 @@
           <a class="logo" href="#"><img src="images/home/logo.svg" alt="logo"></a>
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link active" href="#">js шарик</a></li>
+              <li class="nav__item"><a class="nav__link active" href="#">студия</a></li>
               <li class="nav__item"><a class="nav__link" href="#">клиенты</a></li>
               <li class="nav__item"><a class="nav__link" href="#">магазин</a></li>
               <li class="nav__item"><a class="nav__link" href="#">контакты</a></li>
@@ -84,9 +84,10 @@
         <img class="about__image" src="images/home/illustration_1.png" alt="">
         <h4 class="about__caption">с 2004 года Любим точность во всем:</h4>
         <ul class="standart__list">
-          <li class="standart__item">146 <span>%</span> Уровень самоотдачи</li>
-          <li class="standart__item">100 <span>%</span> Соблюдение сроков</li>
-          <li class="standart__item">50 <span>%</span> Минимальная предоплата</li>
+          <li class="standart__item"><span class="numb">146<span class="interest">%</span></span>Уровень самоотдачи</li>
+          <li class="standart__item"><span class="numb">100<span class="interest">%</span></span> Соблюдение сроков</li>
+          <li class="standart__item"><span class="numb">50<span class="interest">%</span></span> Минимальная предоплата
+          </li>
 
 
 
@@ -97,6 +98,7 @@
 
   <div class="container">
     <section class="partners">
+      <h2 class="hidden">Партнёры</h2>
       <ul class="partners__list">
         <li class="partners__item"><a href="#" class="partners__link htmlAcademy"></a></li>
         <li class="partners__item"><a href="#" class="partners__link boroda"></a></li>
@@ -110,33 +112,34 @@
 
   <section class="map">
     <div class="container">
+
       <div class="map__contacts contacts">
         <h3 class="contacts__title">nёrds design studio</h3>
-        <p class="contacts__address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <p class="contacts__address">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
         <a href="tel:+78005558628" class="contacts__phone">+7 800 555-86-28</a>
         <button class="contacts__button button">напишите нам</button>
       </div>
 
       <div class="write popup ">
-        <button class="write__close" type="button">Закрыть</button>
+        <button class="write__close" type="button"></button>
 
         <form class="write__form form">
           <h2 class="form__title">Напишите нам</h2>
           <div class="input__wrapper">
             <p class="form__text">
-              <label for="name">Ваше имя:</label>
-              <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+              <label class="form__caption" for="name">Ваше имя:</label>
+              <input class="form__input" id="name" type="text" name="name" placeholder="Имя Фамилия">
             </p>
             <p class="form__text">
-              <label for="login">Ваш email:</label>
-              <input id="login" type="email" name="login" placeholder="email@example.com">
+              <label class="form__caption" for="login">Ваш email:</label>
+              <input class="form__input" id="login" type="email" name="login" placeholder="email@example.com">
             </p>
           </div>
           <p class="form__text">
-            <label for="text">Текс письма:</label>
-            <textarea id="text" type="text" name="text" placeholder="В свободной форме"></textarea>
+            <label class="form__caption" for="text">Текс письма:</label>
+            <textarea class="form__input" id="text" name="text" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="form__send" type="submit">отправить</button>
+          <button class="form__send button" type="submit">отправить</button>
 
         </form>
       </div>
@@ -150,9 +153,9 @@
     <div class="container">
       <div class="footer__inner">
         <ul class="social__list">
-          <li class="social__item"> <a href="#" class="social__link">1</a> </li>
-          <li class="social__item"> <a href="#" class="social__link">2</a> </li>
-          <li class="social__item"> <a href="#" class="social__link">3</a> </li>
+          <li class="social__item"> <a href="#" class="social__link vk"></a> </li>
+          <li class="social__item"> <a href="#" class="social__link fb"></a> </li>
+          <li class="social__item"> <a href="#" class="social__link inst"></a> </li>
         </ul>
         <div class="footer__text">
           <h3 class="text__title">Давайте дружить, это выгодно!</h3>
@@ -163,36 +166,9 @@
   </footer>
 
 
-  <style>
-    dot {
-      position: absolute;
-      display: block;
-      border: 2px solid red;
-      border-radius: 50px;
-      height: 100px;
-      width: 100px;
-    }
-  </style>
-
-  <script>
-    function update(event) {
-      for (let dot; dot = document.querySelector('dot');) {
-        dot.remove();
-      }
-      for (let i = 0; i < event.touches.length; i++) {
-        let { pageX, pageY } = event.touches[i];
-        let dot = document.createElement('dot');
-        dot.style.left = (pageX - 50) + 'px';
-        dot.style.top = (pageY - 50) + 'px';
-        document.body.appendChild(dot);
-      }
-    }
-    window.addEventListener('touchstart', update)
-    window.addEventListener('touchmove', update)
-    window.addEventListener('touchend', update)
-  </script>
-
   <script src="js/main.js"></script>
 </body>
+
+
 
 </html>
