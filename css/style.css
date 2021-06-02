@@ -84,7 +84,7 @@ header {
   padding-bottom: 80px;
   background-image: url(../images/home/illustration_2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: right;
 }
 .header__title {
