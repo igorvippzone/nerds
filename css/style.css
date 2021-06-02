@@ -577,7 +577,9 @@ header {
     color: #283136;
   }
   .services {
-    padding: 20px 0;
+
+    margin: 0;
+    padding: 0;
   }
 
   .services__button {
