@@ -86,7 +86,7 @@ header {
   padding-bottom: 80px;
   background-image: url(../images/home/illustration_2.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right;
 }
 .header__title {
@@ -129,9 +129,14 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 1px solid #eee;
+
+  margin: -10px -5px;
 }
 .services__item {
   max-width: 300px;
+  /* width: 100%; */
+  margin: 10px 5px;
+  /* flex-basis: 300px; */
 }
 .services__title {
   text-transform: uppercase;
@@ -197,12 +202,16 @@ header {
   border-bottom: 1px solid #eee;
 }
 .about__wrapper {
-  max-width: 650px;
-  width: 100%;
+  /* max-width: 650px;
+  width: 100%; */
+  flex: 1 1 650px;
+  /* border: 1px solid red */
 }
 .about-image__wrapper {
-  max-width: 360px;
-  width: 100%;
+  /* max-width: 360px;
+  width: 100%; */
+  flex: 1 1 360px;
+  /* border: 1px solid blue; */
 }
 .about__title {
   font-weight: 500;
@@ -244,6 +253,8 @@ header {
   flex-wrap: nowrap;
 }
 .standart__item {
+  display: flex;
+  flex-direction: column;
   line-height: 18px;
   color: #283136;
 }
@@ -262,7 +273,7 @@ header {
   line-height: 40px;
   /* margin-bottom: 50px; */
   top: 0;
-  left: 100%;
+  /* left: 100%; */
 }
 .partners {
   padding: 50px 0;
@@ -347,7 +358,7 @@ header {
   /* top: 22%;
   left: 60%; */
   top: 70px;
-  left: 900px;
+  left: 50%;
 }
 .contacts {
   background-color: #fff;
@@ -385,7 +396,7 @@ header {
 .popup {
   position: absolute;
   background-color: #fff;
-  top: 40%;
+
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 960px;
@@ -393,20 +404,24 @@ header {
 
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   padding: 70px 100px;
-  z-index: 1000;
   display: block;
-  /* opacity: 0; */
-  /* visibility: hidden; */
-  /* display: none; */
+
+  opacity: 0;
+  top: -100%;
+  z-index: -1;
+}
+.visible {
+  opacity: 1;
+  top: 40%;
+  z-index: 1000;
+
+  transition: all;
+  transition-duration: 0.2s;
 }
 .hidden {
   position: absolute;
   /* opacity: 0; */
-  top: -100%;
   display: none;
-
-  transition: all;
-  transition-duration: 0.2s;
 }
 
 .form__title {
@@ -523,5 +538,3 @@ header {
   line-height: 22px;
   color: #444444;
 }
-
-
