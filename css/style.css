@@ -349,7 +349,7 @@ header {
   background-image: url(../images/home/map.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   padding: 55px 0;
 }
 .contacts::after {
@@ -485,12 +485,14 @@ header {
 }
 .footer__inner {
   display: flex;
+  justify-content: space-between;
 }
 .social__list {
   display: flex;
   max-width: 261px;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .social__link {
   display: block;
@@ -526,7 +528,7 @@ header {
   opacity: 0.1;
 }
 .footer__text {
-  margin-left: 140px;
+  /* margin-left: 140px; */
 }
 .text__title {
   font-weight: 700;
@@ -537,4 +539,8 @@ header {
 .text__subtitle {
   line-height: 22px;
   color: #444444;
+}
+
+@media(max-width:950px){
+  
 }

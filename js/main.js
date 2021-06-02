@@ -13,10 +13,12 @@ openBtn.addEventListener("click", (e) => {
 });
 close.addEventListener("click", () => {
   popup.classList.remove("visible");
+  openBtn.removeAttribute("disabled", "disabled");
+  openBtn.style.cursor = "pointer";
 });
 
-body.addEventListener("click", (e) => {
-  console.log(e);
+document.addEventListener("click", (e) => {
+  // console.log(e);
   const active = document.querySelector(".popup.visible");
   if (active && e.target !== active && !active.contains(e.target)) {
     popup.classList.remove("visible");
