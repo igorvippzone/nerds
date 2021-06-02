@@ -1,0 +1,77 @@
+.title__wrapper {
+  background-image: none;
+}
+.header__title {
+  text-align: center;
+  max-width: 100%;
+}
+.aside {
+  width: 35%;
+}
+/* form */
+.form__title {
+  text-transform: uppercase;
+}
+.filter {
+  margin: 20px auto;
+  padding: 25px;
+  width: 300px;
+}
+.filter-range__wrapper {
+  margin-bottom: 10px;
+
+  padding: 30px 18px;
+  border-radius: 3px;
+  background-color: #eee;
+}
+.filter-range {
+  position: relative;
+}
+.filter-range__scale {
+  height: 2px;
+  background-color: #d7dcdf;
+}
+.filter-range__bar {
+  height: 2px;
+  width: 75%;
+  background-color: #00ca74;
+}
+.filter-range__handle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+
+  padding: 0;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-color: #ababab;
+  cursor: pointer;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
+}
+.filter-interval {
+  display: flex;
+}
+.filter-interval label {
+  width: 50%;
+  text-transform: uppercase;
+  color: #283136;
+  line-height: 22px;
+}
+.filter-interval label:last-child {
+  text-align: right;
+}
+
+.filter-interval input {
+  margin-left: 8px;
+  width: 80px;
+  height: 38px;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #eee;
+}
+
+
+/* form END*/
