@@ -79,14 +79,94 @@ header {
   background-position: left;
   padding-left: 40px;
 }
+.slide-ecran{
+  height: 500px;
+}
+.slider{
+  position: relative;
+}
 .title__wrapper {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(../images/home/illustration_2.png);
+ 
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+
+  transition: opacity 1s ease-in;
 }
+.slide-1{
+  background-image: url(../images/home/slider-1.png);
+  
+}
+.slide-2{
+  background-image: url(../images/home/slider-2.png);
+
+}
+.slide-3{
+  background-image: url(../images/home/slider-3.png);
+
+}
+/* Navigation item styles */
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 4;
+}
+
+div.sim-slider-arrow-left {
+  left: 10px;
+  top: 40%;
+  display: block;
+  background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+}
+
+div.sim-slider-arrow-right {
+  right: 10px;
+  top: 40%;
+  display: block;
+  background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+}
+
+div.sim-slider-arrow-left:hover {
+  opacity: 1.0;
+}
+
+div.sim-slider-arrow-right:hover {
+  opacity: 1.0;
+}
+
+div.sim-slider-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  text-align: center;
+}
+
+span.sim-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: #BBB;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .header__title {
   max-width: 500px;
   font-size: 55px;

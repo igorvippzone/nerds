@@ -235,6 +235,7 @@ header {
 
 .catalog-link__list {
   display: flex;
+  margin-top: 25px;
 }
 .catalog-link__item {
   margin-right: 11px;
