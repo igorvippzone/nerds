@@ -39,32 +39,166 @@
   </header>
 
   <div class="container">
-    <aside class="aside">
-      <form class="aside__form">
-        <div class="form__filter filter">
-          <h3 class="form__title">Стоимость:</h3>
-          <div class="filter-range__wrapper">
-            <div class="filter-range">
-              <div class="filter-range__scale">
-                <div class="filter-range__bar"></div>
+    <div class="wrapper">
+      <aside class="aside">
+        <form class="aside__form">
+          <div class="form__filter filter">
+            <h3 class="form__title">Стоимость:</h3>
+            <div class="filter-range__wrapper">
+              <div class="filter-range">
+                <div class="filter-range__scale">
+                  <div class="filter-range__bar"></div>
+                </div>
+                <button class="filter-range__handle min"></button>
+                <button class="filter-range__handle max" style="left:75%"></button>
               </div>
-              <button class="filter-range__handle min"></button>
-              <button class="filter-range__handle max" style="left:75%"></button>
+            </div>
+
+            <div class="filter-interval">
+              <label for="">от <input type="text" name="min-interval" value="0"></label>
+              <label for="">до <input type="text" name="max-interval" value="15000"></label>
+            </div>
+          </div>
+          <div class="form__item grid">
+            <h3 class="form__title">Сетка:</h3>
+            <label><input name="grid" type="radio" checked>Адаптивная</label>
+            <label><input name="grid" type="radio">Фиксированная</label>
+            <label><input name="grid" type="radio">Резиновая</label>
+          </div>
+          <div class="form__item features">
+            <h3 class="form__title">особенности:</h3>
+            <label for=""><input type="checkbox" checked>Слайдер</label>
+            <label for=""><input type="checkbox">Блок преимуществ</label>
+            <label for=""><input type="checkbox" checked>Новости</label>
+            <label for=""><input type="checkbox">Галерея</label>
+            <label for=""><input type="checkbox">Корзина</label>
+          </div>
+          <button class="form__send button filter__button" type="submit">показать</button>
+        </form>
+      </aside>
+      <main class="main">
+        <div class="sort">
+          <h3 class="form__title">Сортировать:</h3>
+          <div class="sort__btns">
+            <button class="sort-btn active">по цене</button>
+            <button class="sort-btn">по типу</button>
+            <button class="sort-btn">по названию</button>
+            <div class="sort-btn__wrapper">
+              <button class="sort-btn sort__max active"></button>
+              <button class="sort-btn sort__min"></button>
             </div>
           </div>
 
-          <div class="filter-interval">
-            <label for="">от <input type="text" name="min-interval" value="0"></label>
-            <label for="">до <input type="text" name="max-interval" value="15000"></label>
-          </div>
+
         </div>
-        <div class="form__grid grid">
-          <h3 class="form__title">Сетка:</h3>
+
+        <div class="catalog">
+          <ul class="catalog__list">
+            <li class="catalog__item job">
+              <div class="job__header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="job__image" src="images/catalog/catalog-1.jpg" alt="sedona">
+              <div class="job__footer">
+                <h4 class="job__title">sedona</h4>
+                <p class="job__subtitle">Информационный сайт для туристов</p>
+                <button class="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li class="catalog__item job">
+              <div class="job__header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="job__image" src="images/catalog/catalog-2.jpg" alt="sedona">
+              <div class="job__footer">
+                <h4 class="job__title">pink app</h4>
+                <p class="job__subtitle">Продуктовый лендинг приложения для iOS и Android</p>
+                <button class="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li class="catalog__item job">
+              <div class="job__header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="job__image" src="images/catalog/catalog-3.jpg" alt="sedona">
+              <div class="job__footer">
+                <h4 class="job__title">barbershop</h4>
+                <p class="job__subtitle">Сайт салона красоты. Для мужчин, да.</p>
+                <button class="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li class="catalog__item job">
+              <div class="job__header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="job__image" src="images/catalog/catalog-4.jpg" alt="sedona">
+              <div class="job__footer">
+                <h4 class="job__title">mishka</h4>
+                <p class="job__subtitle">Интернет-магазин вязаных игрушек</p>
+                <button class="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li class="catalog__item job">
+              <div class="job__header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="job__image" src="images/catalog/catalog-5.jpg" alt="sedona">
+              <div class="job__footer">
+                <h4 class="job__title">a plus</h4>
+                <p class="job__subtitle">Лендинг курсов повышения квалификации</p>
+                <button class="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li class="catalog__item job">
+              <div class="job__header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="job__image" src="images/catalog/catalog-6.jpg" alt="sedona">
+              <div class="job__footer">
+                <h4 class="job__title">квас</h4>
+                <p class="job__subtitle">Промо-сайт производителя крафтового кваса</p>
+                <button class="button">9 900 ₽</button>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="catalog-link__list">
+            <li class="catalog-link__item active">
+              <a class=""href="#">1</a>
+            </li>
+            <li class="catalog-link__item">
+              <a href="#">2</a>
+            </li>
+            <li class="catalog-link__item">
+              <a href="#">3</a>
+            </li>
+            <li class="catalog-link__item">
+              <a href="#">следующая</a>
+            </li>
+
+          </ul>
         </div>
-      </form>
-    </aside>
-    <main class="main"></main>
+      </main>
+    </div>
   </div>
+
+
+
+
+
+
 
   <section class="map">
     <div class="container">
