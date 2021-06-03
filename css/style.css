@@ -80,7 +80,7 @@ header {
   padding-left: 40px;
 }
 .slide-ecran {
-  height: 500px;
+ opacity: 0;
 }
 .slider {
   position: relative;
@@ -165,7 +165,7 @@ span.sim-dot {
 }
 
 .header__title {
-  max-width: 500px;
+  /* max-width: 500px; */
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
