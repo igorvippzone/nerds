@@ -79,16 +79,16 @@ header {
   background-position: left;
   padding-left: 40px;
 }
-.slide-ecran{
+.slide-ecran {
   height: 500px;
 }
-.slider{
+.slider {
   position: relative;
 }
 .title__wrapper {
   padding-top: 80px;
   padding-bottom: 80px;
- 
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -101,17 +101,14 @@ header {
 
   transition: opacity 1s ease-in;
 }
-.slide-1{
+.slide-1 {
   background-image: url(../images/home/slider-1.png);
-  
 }
-.slide-2{
+.slide-2 {
   background-image: url(../images/home/slider-2.png);
-
 }
-.slide-3{
+.slide-3 {
   background-image: url(../images/home/slider-3.png);
-
 }
 /* Navigation item styles */
 div.sim-slider-arrow-left,
@@ -139,11 +136,11 @@ div.sim-slider-arrow-right {
 }
 
 div.sim-slider-arrow-left:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 div.sim-slider-arrow-right:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 div.sim-slider-dots {
@@ -162,7 +159,7 @@ span.sim-dot {
   margin: 5px 7px;
   padding: 0;
   display: inline-block;
-  background-color: #BBB;
+  background-color: #bbb;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -658,7 +655,6 @@ span.sim-dot {
     color: #283136;
   }
   .services {
-
     margin: 0;
     padding: 0;
   }
