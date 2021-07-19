@@ -102,10 +102,12 @@ header {
 /* form END*/
 .wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .main {
-  margin-left: 140px;
+  /* margin-left: 140px; */
+  width: 65%;
 }
 .sort {
   display: flex;
@@ -156,13 +158,24 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-shrink: 1;
 }
 .job {
-  max-width: 360px;
+  max-width: 48%;
   width: 100%;
   position: relative;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
   margin-bottom: 30px;
+
+  background-image: url(../images/catalog/catalog-1.jpg);
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.job:nth-child(2n) {
+  margin-left: 4%;
 }
 .job:hover .job__footer {
   z-index: 100;
@@ -180,7 +193,7 @@ header {
 .job__header {
   display: flex;
   background-color: #eee;
-  height: 40px;
+  height: 7%; /*  40px*/
   border-radius: 3px 3px 0 0;
   padding-left: 6px;
   align-items: center;
@@ -200,7 +213,6 @@ header {
   width: 100%;
 }
 .job__footer {
-  /* display: none; */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -226,7 +238,7 @@ header {
   color: #666666;
   margin: 0 auto;
   margin-bottom: 32px;
-  width: 255px;
+  /* width: 255px; */
 }
 .job__footer .button {
   padding: 15px 72px;

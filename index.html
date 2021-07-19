@@ -15,11 +15,18 @@
 </head>
 
 <body>
+
+
+
+
+
+
+  
   <header>
     <div class="container">
       <div class="header">
         <div class="header__inner">
-          <a class="logo" href="#"><img src="images/home/logo.svg" alt="logo"></a>
+          <a class="logo" href="index.html"><img src="images/home/logo.svg" alt="logo"></a>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item"><a class="nav__link active" href="#">студия</a></li>
@@ -59,8 +66,8 @@
             </li>
 
           </ul>
-          <!-- <div class="sim-slider-arrow-left"></div>
-          <div class="sim-slider-arrow-right"></div> -->
+          <div class="sim-slider-arrow-left"></div>
+          <div class="sim-slider-arrow-right"></div>
           <div class="sim-slider-dots"></div>
         </div>
       </div>
@@ -138,6 +145,9 @@
   </div>
 
   <section class="map">
+    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6570c0b96dc290a0900443cdb132e4ea0884dcd18ba35d191b107a240fbbe8c0&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script> -->
+    <div id="yandexmap" style="width: 100%; min-height: 400px;"></div>
+
     <div class="container">
 
       <div class="map__contacts contacts">
@@ -192,7 +202,10 @@
     </div>
   </footer>
 
-  <script src="js/slider.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+ 
+  <script src="js/map.js"></script>
+  <!-- <script src="js/slider.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 

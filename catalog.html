@@ -100,7 +100,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="job__image" src="images/catalog/catalog-1.jpg" alt="sedona">
+              <!-- <img class="job__image" src="images/catalog/catalog-1.jpg" alt="sedona"> -->
               <div class="job__footer">
                 <h4 class="job__title">sedona</h4>
                 <p class="job__subtitle">Информационный сайт для туристов</p>
@@ -113,7 +113,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="job__image" src="images/catalog/catalog-2.jpg" alt="sedona">
+              <!-- <img class="job__image" src="images/catalog/catalog-2.jpg" alt="sedona"> -->
               <div class="job__footer">
                 <h4 class="job__title">pink app</h4>
                 <p class="job__subtitle">Продуктовый лендинг приложения для iOS и Android</p>
@@ -126,7 +126,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="job__image" src="images/catalog/catalog-3.jpg" alt="sedona">
+              <!-- <img class="job__image" src="images/catalog/catalog-3.jpg" alt="sedona"> -->
               <div class="job__footer">
                 <h4 class="job__title">barbershop</h4>
                 <p class="job__subtitle">Сайт салона красоты. Для мужчин, да.</p>
@@ -139,7 +139,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="job__image" src="images/catalog/catalog-4.jpg" alt="sedona">
+              <!-- <img class="job__image" src="images/catalog/catalog-4.jpg" alt="sedona"> -->
               <div class="job__footer">
                 <h4 class="job__title">mishka</h4>
                 <p class="job__subtitle">Интернет-магазин вязаных игрушек</p>
@@ -152,7 +152,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="job__image" src="images/catalog/catalog-5.jpg" alt="sedona">
+              <!-- <img class="job__image" src="images/catalog/catalog-5.jpg" alt="sedona"> -->
               <div class="job__footer">
                 <h4 class="job__title">a plus</h4>
                 <p class="job__subtitle">Лендинг курсов повышения квалификации</p>
@@ -165,10 +165,24 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="job__image" src="images/catalog/catalog-6.jpg" alt="sedona">
+              <!-- <img class="job__image" src="images/catalog/catalog-6.jpg" alt="sedona"> -->
               <div class="job__footer">
                 <h4 class="job__title">квас</h4>
                 <p class="job__subtitle">Промо-сайт производителя крафтового кваса</p>
+                <button class="button">9 900 ₽</button>
+              </div>
+            </li>
+
+            <li class="catalog__item job">
+              <div class="job__header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <!-- <img class="job__image" src="images/catalog/catalog-1.jpg" alt="sedona"> -->
+              <div class="job__footer">
+                <h4 class="job__title">sedona</h4>
+                <p class="job__subtitle">Информационный сайт для туристов</p>
                 <button class="button">9 900 ₽</button>
               </div>
             </li>
@@ -255,8 +269,17 @@
     </div>
   </footer>
 
-
+  <script src="js/vanilla-tilt.js"></script>
   <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".job"), {
+      max: 15,     // max tilt rotation (degrees)
+      speed: 300,    // Speed of the enter/exit transition
+
+    });
+
+  </script>
 </body>
 
 

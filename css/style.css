@@ -112,6 +112,38 @@ header {
 .slide-3 {
   background-image: url(../images/home/slider-3.png);
 }
+
+.sim-slider {
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 20px auto;
+  padding: 30px 50px;
+  border: 1px solid #ccd;
+  background-color: white;
+}
+
+/* General styles */
+.sim-slider {
+  position: relative;
+}
+
+.sim-slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.sim-slider-element {
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+}
 /* Navigation item styles */
 div.sim-slider-arrow-left,
 div.sim-slider-arrow-right {
@@ -150,9 +182,10 @@ div.sim-slider-dots {
   height: auto;
   position: absolute;
   left: 0;
-  bottom: 0;
-  z-index: 3;
+  bottom: -20px;
+  z-index: 300;
   text-align: center;
+  height: 100px;
 }
 
 span.sim-dot {
@@ -417,7 +450,7 @@ span.sim-dot {
   background-image: url(../images/home/partners_4.png);
 }
 .map {
-  background-image: url(../images/home/map.png);
+  /* background-image: url(../images/home/map.png); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -428,15 +461,13 @@ span.sim-dot {
   padding: 55px 0;
 
   position: relative;
+  min-height: 400px;
 }
-
-.contacts::after {
-  content: url(../images/home/map-marker.png);
+#yandexmap {
   position: absolute;
-  /* top: 22%;
-  left: 60%; */
-  top: 70px;
-  left: 50%;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
 }
 .contacts {
   background-color: #fff;
@@ -453,6 +484,8 @@ span.sim-dot {
   justify-content: space-between;
 
   padding: 50px;
+  z-index: 2;
+  position: absolute;
 }
 
 .contacts__title {
